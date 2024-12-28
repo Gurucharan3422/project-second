@@ -1,0 +1,372 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/023/695/984/large_2x/makeup-products-on-pink-background-illustration-ai-generative-free-photo.jpg'); /* Replace 'your-image.jpg' with your image path */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-position: center; /* Centers the image */
+
+}
+
+
+.home-page {
+  background-size: 100% 100%; /* Scale the image to cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.footer-content {
+    display: flex;              /* Display items in a horizontal row */
+    justify-content: space-around; /* Space items evenly */
+    gap: 20px;  /* Optional space between headings */
+    padding: 20px; /* Padding around the container */
+    
+    
+}
+
+.heading {
+    flex: 1;  /* Each heading will take equal space */
+    text-align: center;  /* Center the text inside each heading */
+}
+
+.footer-content h3 {
+    font-size: 24px;  /* Adjust heading size */
+    font-weight: bold;  /* Make the text bold */
+    margin: 0;  /* Remove default margin */
+}
+
+
+
+/* Position the icons in the corners */
+.facebook {
+    top: 10px;
+    left: 10px;  /* Top-left corner */
+}
+
+.instagram {
+    top: 10px;
+    right: 10px; /* Top-right corner */
+}
+
+.twitter {
+    bottom: 10px;
+    left: 10px;  /* Bottom-left corner */
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #888;
+}
+.footer-content ul {
+           
+           list-style-type: none;
+           padding: 0px;
+}
+
+.footer-content ul li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+
+
+footer {
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+    padding: 30px 10%;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  footer h4 {
+    margin-bottom: 10px;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer li {
+    margin-bottom: 5px;
+  }
+
+
+  /* Responsive Navbar */
+@media (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  /* Responsive Hero Section */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-text {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  /* Responsive Buttons and Inputs */
+  button, input {
+    padding: 15px;
+    font-size: 16px;
+  }
+  
+  
+  .stat-card:nth-child(1) {
+        margin-top: 0;
+        z-index: 3;
+  }
+  .stat-card:nth-child(2){
+    margin-top: 50px;
+    z-index: 2;
+  }
+  .stat-card:nth-child(3){
+    margin-top: 100px;
+    z-index: 1;
+  }
+  
+  /* Mobile */
+  @media only screen and (max-width: 767px) {
+    /* Styles for mobile */
+    .hero { flex-direction: column; }
+    .stat-cards { flex-direction: column; }
+    .stat-card { width: 100%; margin-bottom: 20px; }
+    .footer-content { flex-direction: column; }
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablet */
+  }
+  
+  /* Desktop */
+  @media only screen and (min-width: 1024px) {
+    /* Styles for desktop */
+  }
+
+  
+.lead{
+  font-style: italic;
+}
+
+
+
+#discover .card {
+  border: none;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+#discover .card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#discover .card-img-top {
+  width: 80%;
+  height: 250px; /* Adjust height of the image */
+  object-fit:cover; /* Ensure the image covers the area without distortion */
+}
+
+
+
+/* Form Styling */
+#form {
+  margin-top: 50px;
+}
+
+#form h2 {
+  text-align: center;
+}
+
+#form .form-group {
+  margin-bottom: 15px;
+}
+
+#form .btn {
+  display: block;
+  width: 100%;
+}
+
+/* Card Layout */
+.card {
+  width: 18rem;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+
+.custom-row {
+  max-width: 80%; /* Adjust percentage or set a specific width like 600px */
+  margin: 0 auto; /* Center it horizontally */
+}
+
+.custom-gap {
+  padding: 10px; /* Add padding around the cards */
+}
+.row {
+  gap: 10px; /* Add gap between columns in the row */
+  margin: 100px;
+}
+
+
+.container {
+  max-width: 1400px; /* Adjust this value as needed */
+  width: 100%; /* Optional: Ensure it occupies full width */
+}
+
+.para{
+  font-style: italic;
+}
+
+.name{
+  font-weight: bolder;
+}
+
+.contact-info{
+  font-weight: bold;
+}
+
+.container{
+  background-image: url(https://t3.ftcdn.net/jpg/05/32/63/26/360_F_532632632_wot9RANSdb4UmYi0TEC7tWxqzqROcu1o.jpg);
+}
+
+
+
+
+/* Add space between the cards */
+#discover .row .card {
+  margin-bottom: 20px; /* Add space below each card */
+  margin-right: 20px; /* Add space to the right of each card */
+}
+
+/* Adjust the alignment to prevent overlapping */
+#discover .row {
+  display: flex;
+  flex-wrap: wrap; /* Ensure cards wrap properly to the next row */
+  gap: 20px; /* Use gap to add uniform spacing between cards */
+}
+
+/* Optional: Ensure cards take equal space */
+#discover .col-lg-4, #discover .col-md-6 {
+  flex: 1 1 calc(33.333% - 20px); /* Adjust card width for three in a row */
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: block;
+    position: relative;
+  }
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  .navbar-nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+.container-fluid{
+  
+  background-image:url(https://static.vecteezy.com/system/resources/previews/042/603/478/non_2x/pink-blue-bright-gradient-fuchsia-pink-blue-contrast-background-vector.jpg)
+  
+}
